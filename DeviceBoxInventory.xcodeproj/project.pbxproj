@@ -13,10 +13,17 @@
 		D267D15524C617CF0032CEB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D267D15324C617CF0032CEB7 /* Main.storyboard */; };
 		D267D15724C617D20032CEB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D267D15624C617D20032CEB7 /* Assets.xcassets */; };
 		D267D15A24C617D20032CEB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D267D15824C617D20032CEB7 /* LaunchScreen.storyboard */; };
+		D267D16524C618190032CEB7 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = D267D16424C618190032CEB7 /* Box.swift */; };
+		D267D16724C618570032CEB7 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = D267D16624C618570032CEB7 /* Device.swift */; };
+		D267D16924C618910032CEB7 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D267D16824C618910032CEB7 /* Item.swift */; };
+		D267D16C24C619E00032CEB7 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D267D16B24C619E00032CEB7 /* Manager.swift */; };
+		D267D16E24C622770032CEB7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D267D16D24C622770032CEB7 /* Constants.swift */; };
+		D267D17124C622D60032CEB7 /* BoxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D267D16F24C622D60032CEB7 /* BoxTableViewCell.swift */; };
+		D267D17224C622D60032CEB7 /* BoxTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D267D17024C622D60032CEB7 /* BoxTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D267D14A24C617CF0032CEB7 /* DeviceBoxIntentory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeviceBoxIntentory.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D267D14A24C617CF0032CEB7 /* DeviceBoxInventory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeviceBoxInventory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D267D14D24C617CF0032CEB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D267D14F24C617CF0032CEB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D267D15124C617CF0032CEB7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +31,13 @@
 		D267D15624C617D20032CEB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D267D15924C617D20032CEB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D267D15B24C617D20032CEB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D267D16424C618190032CEB7 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		D267D16624C618570032CEB7 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		D267D16824C618910032CEB7 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		D267D16B24C619E00032CEB7 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		D267D16D24C622770032CEB7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D267D16F24C622D60032CEB7 /* BoxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxTableViewCell.swift; sourceTree = "<group>"; };
+		D267D17024C622D60032CEB7 /* BoxTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BoxTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +62,7 @@
 		D267D14B24C617CF0032CEB7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D267D14A24C617CF0032CEB7 /* DeviceBoxIntentory.app */,
+				D267D14A24C617CF0032CEB7 /* DeviceBoxInventory.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,23 +70,62 @@
 		D267D14C24C617CF0032CEB7 /* DeviceBoxIntentory */ = {
 			isa = PBXGroup;
 			children = (
-				D267D14D24C617CF0032CEB7 /* AppDelegate.swift */,
-				D267D14F24C617CF0032CEB7 /* SceneDelegate.swift */,
-				D267D15124C617CF0032CEB7 /* ViewController.swift */,
-				D267D15324C617CF0032CEB7 /* Main.storyboard */,
+				D267D16124C617EC0032CEB7 /* Delegates */,
+				D267D16224C617F10032CEB7 /* Controllers */,
+				D267D16324C617FC0032CEB7 /* Views */,
+				D267D16A24C619680032CEB7 /* Models */,
+				D267D16D24C622770032CEB7 /* Constants.swift */,
 				D267D15624C617D20032CEB7 /* Assets.xcassets */,
-				D267D15824C617D20032CEB7 /* LaunchScreen.storyboard */,
 				D267D15B24C617D20032CEB7 /* Info.plist */,
 			);
 			path = DeviceBoxIntentory;
 			sourceTree = "<group>";
 		};
+		D267D16124C617EC0032CEB7 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				D267D14D24C617CF0032CEB7 /* AppDelegate.swift */,
+				D267D14F24C617CF0032CEB7 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		D267D16224C617F10032CEB7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D267D15124C617CF0032CEB7 /* ViewController.swift */,
+				D267D16F24C622D60032CEB7 /* BoxTableViewCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D267D16324C617FC0032CEB7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D267D17024C622D60032CEB7 /* BoxTableViewCell.xib */,
+				D267D15324C617CF0032CEB7 /* Main.storyboard */,
+				D267D15824C617D20032CEB7 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D267D16A24C619680032CEB7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D267D16424C618190032CEB7 /* Box.swift */,
+				D267D16624C618570032CEB7 /* Device.swift */,
+				D267D16824C618910032CEB7 /* Item.swift */,
+				D267D16B24C619E00032CEB7 /* Manager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D267D14924C617CF0032CEB7 /* DeviceBoxIntentory */ = {
+		D267D14924C617CF0032CEB7 /* DeviceBoxInventory */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D267D15E24C617D20032CEB7 /* Build configuration list for PBXNativeTarget "DeviceBoxIntentory" */;
+			buildConfigurationList = D267D15E24C617D20032CEB7 /* Build configuration list for PBXNativeTarget "DeviceBoxInventory" */;
 			buildPhases = (
 				D267D14624C617CF0032CEB7 /* Sources */,
 				D267D14724C617CF0032CEB7 /* Frameworks */,
@@ -82,9 +135,9 @@
 			);
 			dependencies = (
 			);
-			name = DeviceBoxIntentory;
+			name = DeviceBoxInventory;
 			productName = DeviceBoxIntentory;
-			productReference = D267D14A24C617CF0032CEB7 /* DeviceBoxIntentory.app */;
+			productReference = D267D14A24C617CF0032CEB7 /* DeviceBoxInventory.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +155,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D267D14524C617CF0032CEB7 /* Build configuration list for PBXProject "DeviceBoxIntentory" */;
+			buildConfigurationList = D267D14524C617CF0032CEB7 /* Build configuration list for PBXProject "DeviceBoxInventory" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +168,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D267D14924C617CF0032CEB7 /* DeviceBoxIntentory */,
+				D267D14924C617CF0032CEB7 /* DeviceBoxInventory */,
 			);
 		};
 /* End PBXProject section */
@@ -126,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D267D15A24C617D20032CEB7 /* LaunchScreen.storyboard in Resources */,
+				D267D17224C622D60032CEB7 /* BoxTableViewCell.xib in Resources */,
 				D267D15724C617D20032CEB7 /* Assets.xcassets in Resources */,
 				D267D15524C617CF0032CEB7 /* Main.storyboard in Resources */,
 			);
@@ -139,8 +193,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D267D15224C617CF0032CEB7 /* ViewController.swift in Sources */,
+				D267D16524C618190032CEB7 /* Box.swift in Sources */,
 				D267D14E24C617CF0032CEB7 /* AppDelegate.swift in Sources */,
 				D267D15024C617CF0032CEB7 /* SceneDelegate.swift in Sources */,
+				D267D16C24C619E00032CEB7 /* Manager.swift in Sources */,
+				D267D17124C622D60032CEB7 /* BoxTableViewCell.swift in Sources */,
+				D267D16924C618910032CEB7 /* Item.swift in Sources */,
+				D267D16724C618570032CEB7 /* Device.swift in Sources */,
+				D267D16E24C622770032CEB7 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,14 +345,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 200720;
 				DEVELOPMENT_TEAM = 2JDGUK4DRH;
 				INFOPLIST_FILE = DeviceBoxIntentory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.johnchoi96.DeviceBoxIntentory;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.johnchoi96.DeviceBoxInventory;
+				PRODUCT_NAME = DeviceBoxInventory;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -303,14 +364,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 200720;
 				DEVELOPMENT_TEAM = 2JDGUK4DRH;
 				INFOPLIST_FILE = DeviceBoxIntentory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.johnchoi96.DeviceBoxIntentory;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.johnchoi96.DeviceBoxInventory;
+				PRODUCT_NAME = DeviceBoxInventory;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -319,7 +381,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D267D14524C617CF0032CEB7 /* Build configuration list for PBXProject "DeviceBoxIntentory" */ = {
+		D267D14524C617CF0032CEB7 /* Build configuration list for PBXProject "DeviceBoxInventory" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D267D15C24C617D20032CEB7 /* Debug */,
@@ -328,7 +390,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D267D15E24C617D20032CEB7 /* Build configuration list for PBXNativeTarget "DeviceBoxIntentory" */ = {
+		D267D15E24C617D20032CEB7 /* Build configuration list for PBXNativeTarget "DeviceBoxInventory" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D267D15F24C617D20032CEB7 /* Debug */,
