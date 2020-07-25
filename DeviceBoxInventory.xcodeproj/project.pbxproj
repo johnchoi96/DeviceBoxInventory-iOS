@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D20A659824CC1D4800D63EA9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D20A659724CC1D4800D63EA9 /* README.md */; };
 		D267D14E24C617CF0032CEB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D267D14D24C617CF0032CEB7 /* AppDelegate.swift */; };
 		D267D15024C617CF0032CEB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D267D14F24C617CF0032CEB7 /* SceneDelegate.swift */; };
 		D267D15224C617CF0032CEB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D267D15124C617CF0032CEB7 /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D20A659724CC1D4800D63EA9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D267D14A24C617CF0032CEB7 /* DeviceBoxInventory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeviceBoxInventory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D267D14D24C617CF0032CEB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D267D14F24C617CF0032CEB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 		D267D14124C617CF0032CEB7 = {
 			isa = PBXGroup;
 			children = (
+				D20A659724CC1D4800D63EA9 /* README.md */,
 				D267D14C24C617CF0032CEB7 /* DeviceBoxIntentory */,
 				D267D14B24C617CF0032CEB7 /* Products */,
 			);
@@ -180,6 +183,7 @@
 			files = (
 				D267D15A24C617D20032CEB7 /* LaunchScreen.storyboard in Resources */,
 				D267D17224C622D60032CEB7 /* BoxTableViewCell.xib in Resources */,
+				D20A659824CC1D4800D63EA9 /* README.md in Resources */,
 				D267D15724C617D20032CEB7 /* Assets.xcassets in Resources */,
 				D267D15524C617CF0032CEB7 /* Main.storyboard in Resources */,
 			);
