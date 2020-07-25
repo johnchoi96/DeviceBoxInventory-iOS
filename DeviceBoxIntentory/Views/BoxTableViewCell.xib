@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,27 +21,27 @@
                         <rect key="frame" x="20" y="10" width="280" height="100"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="39f-Z1-sna">
-                                <rect key="frame" x="0.0" y="0.0" width="280" height="100"/>
+                                <rect key="frame" x="5" y="0.0" width="270" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPhone X 64gb Silver" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hab-gS-kno">
-                                        <rect key="frame" x="0.0" y="0.0" width="280" height="42.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="270" height="42.5"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="20" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rUD-gV-qjH">
-                                        <rect key="frame" x="0.0" y="57.5" width="280" height="42.5"/>
+                                        <rect key="frame" x="0.0" y="57.5" width="270" height="42.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Serial:" textAlignment="natural" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kmQ-7e-m7y">
                                                 <rect key="frame" x="0.0" y="0.0" width="47.5" height="42.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABC123DEF456" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPU-um-vgL">
-                                                <rect key="frame" x="150" y="0.0" width="130" height="42.5"/>
+                                                <rect key="frame" x="145" y="0.0" width="125" height="42.5"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -48,12 +49,12 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="App Color"/>
                         <constraints>
                             <constraint firstItem="39f-Z1-sna" firstAttribute="top" secondItem="C4h-NW-Avx" secondAttribute="top" id="4Ao-uW-TsF"/>
-                            <constraint firstItem="39f-Z1-sna" firstAttribute="leading" secondItem="C4h-NW-Avx" secondAttribute="leading" id="Td2-6j-36T"/>
+                            <constraint firstItem="39f-Z1-sna" firstAttribute="leading" secondItem="C4h-NW-Avx" secondAttribute="leading" constant="5" id="Td2-6j-36T"/>
                             <constraint firstAttribute="bottom" secondItem="39f-Z1-sna" secondAttribute="bottom" id="qhn-9I-hPO"/>
-                            <constraint firstAttribute="trailing" secondItem="39f-Z1-sna" secondAttribute="trailing" id="rv8-We-PoR"/>
+                            <constraint firstAttribute="trailing" secondItem="39f-Z1-sna" secondAttribute="trailing" constant="5" id="rv8-We-PoR"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -74,4 +75,9 @@
             <point key="canvasLocation" x="140.57971014492756" y="178.79464285714286"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <namedColor name="App Color">
+            <color red="0.090854270599999995" green="0.1144311288" blue="0.4089057579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

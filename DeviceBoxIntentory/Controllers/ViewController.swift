@@ -16,6 +16,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.title = "Device Box"
         table.delegate = self
         table.dataSource = self
         table.rowHeight = UITableView.automaticDimension
@@ -23,6 +24,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         table.register(UINib(nibName: K.boxCellControllerName, bundle: nil), forCellReuseIdentifier: K.boxCellIdentifier)
     }
 
+    @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
+        print("TODO Add Device Box")
+        // TODO: Segue to Device Add screen
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return manager.boxList.count
     }
